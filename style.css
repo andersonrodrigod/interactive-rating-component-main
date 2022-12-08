@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    color: white;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+
+.corpo {
+    display: block;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    height: 310px;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+    transform: translate(-50%, -50%);
+}
+
+.img-1 {
+    margin: 25px 25px;  
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.text > h1 {
+    font-size: 22px;
+    padding: 0px 0px 15px 25px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.text > p {
+    font-family: 'Overpass', sans-serif;
+    padding: 0px 10px 15px 25px;
+    font-size: 14px;
+}
+
+.score-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    
+}
+
+.score-btn {
+    background-color: hsl(216, 12%, 54%);
+    text-align: center;
+    padding: 10px 18px 10px 18px;
+    border: none;
+    height: 40px;
+    border-radius: 100px;
+    color: black;
+    cursor: pointer;
+}
+
+.score-btn:hover {
+    background-color: hsla(215, 14%, 75%, 0.897) ;
+}
+
+.button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.submit:hover {
+    background-color: hsla(25, 97%, 53%, 0.822);
+}
+
+.submit {
+    color: white;
+    background-color:hsl(25, 97%, 53%);
+    padding: 10px 110px 10px 110px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.corpo-2 {
+    display: none;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    height: 310px;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+    transform: translate(-50%, -50%);
+    
+}
+
+.img-2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.img-2 > img {
+    height: 70px;
+    width: 110px;
+}
+
+.text-2 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    
+}
+
+.selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(210, 40%, 37%);
+    width: 165px;
+    margin-left: 75px;
+    border-radius: 10px; 
+    margin-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
+}
+
+.selected > p {
+    color: orange;
+    text-align: center;       
+}
+
+.text-2 > h1 {
+    font-size: 22px;
+    margin-bottom: 25px
+}
+
+.text-2 > p {
+    font-size: 14px;
+}
