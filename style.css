@@ -111,7 +111,8 @@ body {
 }
 
 .btn-submit:active {
-    background-color:hsl(25, 97%, 53%) ;
+    background-color:white ;
+    color: black;
 }
 
 
