@@ -1,25 +1,20 @@
-const submit = document.querySelector(".submit")
-const corpo = document.querySelector(".corpo")
-const corpo2 = document.querySelector(".corpo-2")
-const scores = document.querySelectorAll(".score-btn")
-const scoreFinal = document.querySelector(".num")
+const divBtn = document.querySelectorAll(".div-btn")
+const submit = document.querySelector(".btn-submit")
+const center = document.querySelector(".center")
+const select = document.querySelector(".box-select")
+const num = document.getElementById("num")
 
+divBtn.forEach(function(btn) {
+    const item = btn.querySelector(".btn")
+    btn.addEventListener("click", function() {
+        let valor = item.value
+        submit.addEventListener("click", function() {
+            center.classList.add("some")
+            select.classList.add("aparece")
+            num.textContent = valor
 
-
-
-submit.addEventListener("click", () => {
-    corpo.style.display = "none"
-    corpo2.style.display= "block"
-    
-})
-
-scores.forEach((score) => {
-    score.addEventListener("click", () => {
-         scoreFinal.innerHTML = score.innerHTML
-        
-        
+        })
     })
 })
-
 
 
